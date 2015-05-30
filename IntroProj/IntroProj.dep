@@ -6,25 +6,31 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
-      <file>$PROJ_DIR$\ext_trim.s</file>
-      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\UserButton.o</file>
       <file>$PROJ_DIR$\asm.s</file>
-      <file>$PROJ_DIR$\UserButton.s</file>
       <file>$PROJ_DIR$\UserButton.h</file>
       <file>$PROJ_DIR$\ext_trim.h</file>
-      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ext_trim.o</file>
+      <file>$PROJ_DIR$\ext_trim.s</file>
+      <file>$PROJ_DIR$\UserButton.s</file>
+      <file>$PROJ_DIR$\Debug\Obj\UserButton.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
       <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\ext_trim.o</file>
       <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
+      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
     </outputs>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <name>$PROJ_DIR$\asm.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
       <inputs>
         <tool>
-          <name>ILINK</name>
-          <file> 10 2 9 3</file>
+          <name>AARM</name>
+          <file> 11 10 2 1</file>
         </tool>
       </inputs>
     </file>
@@ -39,22 +45,31 @@
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 8 11</file>
+          <file> 11 10</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\asm.s</name>
+      <name>$PROJ_DIR$\UserButton.s</name>
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 2</file>
+          <file> 5</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 8 11 7 6</file>
+          <file> 11 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 8 6 9 5</file>
         </tool>
       </inputs>
     </file>
@@ -63,24 +78,9 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 0</file>
+          <file> 7</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\UserButton.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 3</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file> 8 11</file>
-        </tool>
-      </inputs>
     </file>
   </configuration>
   <configuration>

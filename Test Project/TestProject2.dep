@@ -2,15 +2,57 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>1583776852</fileChecksum>
+  <fileChecksum>2665584988</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\config\generic.icf</file>
-      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
       <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
       <file>$PROJ_DIR$\asm.s</file>
+      <file>$TOOLKIT_DIR$\config\generic.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\ext_trim.o</file>
+      <file>$PROJ_DIR$\..\IntroProj\ext_trim.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\UserButton.o</file>
+      <file>$PROJ_DIR$\..\IntroProj\UserButton.s</file>
+      <file>$PROJ_DIR$\..\IntroProj\UserButton.h</file>
+      <file>$PROJ_DIR$\..\IntroProj\ext_trim.s</file>
     </outputs>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 3 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asm.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 0</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IntroProj\UserButton.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IntroProj\ext_trim.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
@@ -20,24 +62,10 @@
         </tool>
       </outputs>
     </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 0 2</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\asm.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 2</file>
-        </tool>
-      </outputs>
-    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>

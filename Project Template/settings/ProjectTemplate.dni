@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-2015708434
+Checksum=9008934
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -17,8 +17,6 @@ StopOnThrow=_ 0
 ShowArgs=0
 [Disassembly]
 MixedMode=1
-[JLinkDriver]
-CStepIntDis=_ 0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -61,8 +59,7 @@ TypeViolation=1
 UnspecRange=1
 ActionState=1
 [Aliases]
-A0=_ "C:\Users\rc303\Desktop\IntroProj\asm.s" "C:\dev\Microsystems\arm\IntroProj\asm.s"
-Count=1
+Count=0
 SuppressDialog=0
 [Trace1]
 Enabled=0

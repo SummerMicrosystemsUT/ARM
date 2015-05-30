@@ -30,7 +30,7 @@
         <option>
           <name>Variant</name>
           <version>20</version>
-          <state>0</state>
+          <state>38</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -65,7 +65,7 @@
         </option>
         <option>
           <name>OGCoreOrChip</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>GRuntimeLibSelect</name>
@@ -99,7 +99,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>default	None</state>
+          <state>STM32F207ZG	ST STM32F207ZG</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -107,7 +107,7 @@
         </option>
         <option>
           <name>GEndianModeBE</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OGBufferedTerminalOutput</name>
@@ -138,12 +138,12 @@
         <option>
           <name>GFPUCoreSlave</name>
           <version>20</version>
-          <state>0</state>
+          <state>38</state>
         </option>
         <option>
           <name>GBECoreSlave</name>
           <version>20</version>
-          <state>0</state>
+          <state>38</state>
         </option>
         <option>
           <name>OGUseCmsis</name>
@@ -758,11 +758,11 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabelSelect</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state></state>
+          <state>__iar_program_start</state>
         </option>
         <option>
           <name>DoFill</name>
@@ -1868,18 +1868,6 @@
   </configuration>
   <file>
     <name>$PROJ_DIR$\asm.s</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\..\IntroProj\ext_trim.h</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\..\IntroProj\ext_trim.s</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\..\IntroProj\UserButton.h</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\..\IntroProj\UserButton.s</name>
   </file>
 </project>
 
