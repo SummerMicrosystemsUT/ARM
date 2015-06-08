@@ -1,5 +1,7 @@
+[DebugChecksum]
+Checksum=-1225028555
 [Stack]
-FillEnabled=0
+FillEnabled=1
 OverflowWarningsEnabled=1
 WarningThreshold=90
 SpWarningsEnabled=1
@@ -8,8 +10,6 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
-[DebugChecksum]
-Checksum=-890052019
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -48,7 +48,7 @@ ShowTimeSum=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\asm.s}.22.1" 0 0 1 "" 0 ""
+Bp0=_ 0 "STD_CODE2" "{$PROJ_DIR$\..\Project Template\asm.s}.19.1" 0 0 1 "" 0 ""
 Count=1
 [Interrupts]
 Enabled=1

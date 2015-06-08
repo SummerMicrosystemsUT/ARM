@@ -2,47 +2,50 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>1454153158</fileChecksum>
+  <fileChecksum>4038439314</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
-      <file>$PROJ_DIR$\asm.s</file>
       <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
-      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
+      <file>$PROJ_DIR$\asm.s</file>
+      <file>$PROJ_DIR$\..\Project Template\asm.s</file>
+      <file>$PROJ_DIR$\..\Project #0 CPP\main.cpp</file>
+      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
       <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
-      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\asm.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 4</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file> 5 3</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 0 4</file>
+          <file> 4 5</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asm.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Project Template\asm.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
     </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 2</file>
+          <file> 0</file>
         </tool>
       </outputs>
     </file>
@@ -53,6 +56,9 @@
     <forcedrebuild>
       <name>[MULTI_TOOL]</name>
       <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
     </forcedrebuild>
   </configuration>
 </project>

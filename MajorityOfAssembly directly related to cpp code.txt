@@ -1,0 +1,42 @@
+int main()
+{
+main:
+       0x2ee4: 0xb570         PUSH      {R4-R6, LR}
+  int x = 0;
+       0x2ee6: 0x2400         MOVS      R4, #0
+  int y = 1;
+       0x2ee8: 0x2601         MOVS      R6, #1
+  int swap = 0;
+       0x2eea: 0x2000         MOVS      R0, #0
+  for(int i = 0; i < 25; i = i + 1)
+       0x2eec: 0x2500         MOVS      R5, #0
+       0x2eee: 0xe00b         B.N       ??main_0                ; 0x2f08
+	cout << x << endl;
+??main_1:
+       0x2ef0: 0x0021         MOVS      R1, R4
+       0x2ef2: 0x4808         LDR.N     R0, ??DataTable0        ; cout
+       0x2ef4: 0xf7ff 0xfdc6  BL        _ZN7ostreamlsEi         ; 0x2a84
+                                        ostream::operator <<(int)
+       0x2ef8: 0x4907         LDR.N     R1, ??DataTable0_1      ; _Z4endlR7ostream
+                                                                endl(ostream &)
+       0x2efa: 0xf000 0xf815  BL        _ZN7ostreamlsEPFRS_S0_E ; 0x2f28
+                                        ostream::operator <<(ostream&(*)(ostream&))
+	x += y;
+       0x2efe: 0x19a4         ADDS      R4, R4, R6
+	swap = x;
+       0x2f00: 0x0020         MOVS      R0, R4
+	x = y;
+       0x2f02: 0x0034         MOVS      R4, R6
+	y = swap;
+       0x2f04: 0x0006         MOVS      R6, R0
+  for(int i = 0; i < 25; i = i + 1)
+       0x2f06: 0x1c6d         ADDS      R5, R5, #1
+  for(int i = 0; i < 25; i = i + 1)
+??main_0:
+       0x2f08: 0x2d19         CMP       R5, #25                 ; 0x19
+       0x2f0a: 0xdbf1         BLT.N     ??main_1                ; 0x2ef0
+  return 0;
+       0x2f0c: 0x2000         MOVS      R0, #0
+       0x2f0e: 0xbc70         POP       {R4-R6}
+       0x2f10: 0xbc08         POP       {R3}
+       0x2f12: 0x4718         BX        R3
