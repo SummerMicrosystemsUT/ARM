@@ -1,4 +1,5 @@
 #include <ST/iostm32f207zx.h>
+#include "USER_BUTTON.h"
 	
 	NAME    main
         
@@ -21,17 +22,7 @@ __iar_program_start
         THUMB
 
 main  
-	;ENABLE PERIPHERAL CLOCK THAT HANDLES GPIOG PORT
-	LDR	R0, =RCC_AHB1ENR
-	LDR	R1, [R0]
-	ORR	R1, R1, #(1<<6)
-	STR	R1, [R0]
-	
-	;TURN ON USER BUTTON
-	LDR	R0, =GPIOG_MODER
-	LDR	R1, [R0]
-	BIC	R1, R1, #(3<<12)
-	STR	R1, [R0]
+	BL	USER_BUTTON_INIT
 	
 	;ENABLE TIMER 2
 	LDR	R0, =RCC_APB1ENR

@@ -2,23 +2,58 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>1454153158</fileChecksum>
+  <fileChecksum>1563431802</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\UserButton.s</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\Timers.s</file>
+      <file>$PROJ_DIR$\..\IntroProj\UserButton.s</file>
+      <file>$PROJ_DIR$\Debug\Obj\Project#1Assembly.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.s.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\UserButton.o</file>
       <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
-      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
+      <file>$PROJ_DIR$\..\IntroProj\ext_trim.s</file>
       <file>$PROJ_DIR$\asm.s</file>
       <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
       <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
       <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
+      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
+      <file>$PROJ_DIR$\..\IntroProj\ext_trim.h</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\Timers.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.s.o</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\LED.s.c</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\LED.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Timers.o</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\UserButton.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\LED.o</file>
+      <file>$PROJ_DIR$\..\IntroProj\asm.s</file>
+      <file>$PROJ_DIR$\..\Project #0 Assembly\LED.s</file>
     </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Project #0 Assembly\UserButton.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Project #0 Assembly\Timers.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+    </file>
     <file>
       <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 5 3</file>
+          <file> 11 9</file>
         </tool>
       </inputs>
     </file>
@@ -27,7 +62,7 @@
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 0</file>
+          <file> 6</file>
         </tool>
       </outputs>
     </file>
@@ -36,16 +71,42 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 3</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 4 1</file>
+          <file> 10 12</file>
         </tool>
       </inputs>
     </file>
+    <file>
+      <name>$PROJ_DIR$\..\Project #0 Assembly\LED.s.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Project #0 Assembly\LED.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
   </configuration>
   <configuration>
     <name>Release</name>

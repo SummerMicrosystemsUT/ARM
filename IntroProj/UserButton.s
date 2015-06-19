@@ -17,7 +17,7 @@ USER_BUTTON_Init
           LDR.W R0, =GPIOG_MODER
           LDR   R1, [R0]
           BIC   R1, R1, #(3<<12)
-          ORR   R1, R1, #(0<<12)
+          ORR   R1, R1, #(1<<12)
           STR   R1, [R0]
           
           BX    LR
