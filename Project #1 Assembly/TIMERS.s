@@ -4,6 +4,7 @@
 	        
 	PUBLIC TIMER_2_INIT
 	PUBLIC TIMER_2_GENERATE_UPDATE_EVENT
+        PUBLIC  TIMER_2_CCR_1_INIT
         
         SECTION .TIMERS : CODE (2)
         THUMB
@@ -50,5 +51,21 @@ TIMER_2_GENERATE_UPDATE_EVENT
 	STR	R1, [R0]
 	
 	BX LR
+        
+TIMER_2_CCR_1_INIT
+        
+        ;ENABLE CCR 1
+	LDR	R0, =TIM2_CCER
+	LDR	R1, [R0]
+	ORR	R1, R1, #(1<<0)
+	STR	R1, [R0]
+	
+	;SET CAPTURE/COMPARE REGISTER
+	LDR	R0, =TIM2_CCR1
+	LDR	R1, [R0]
+	MOV	R1, #0x00004000
+	STR	R1, [R0]
+        
+        BX      LR
 	
 	END
