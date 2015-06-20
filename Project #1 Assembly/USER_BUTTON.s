@@ -1,16 +1,15 @@
 #include <ST/iostm32f207zx.h>
 
-	NAME UserButton
+	NAME USER_BUTTON
 	        
-	PUBLIC UserButtonInit
-        PUBLIC UserButtonPressed
+	PUBLIC USER_BUTTON_INIT
         
-        SECTION .UserButton : CODE (2)
+        SECTION .USER_BUTTON : CODE (2)
         THUMB
 	
 	;USER BUTTON IS ON GPIOG PORT.
 	
-UserButtonInit
+USER_BUTTON_INIT
 	;ENABLE PERIPHERAL CLOCK THAT HANDLES GPIOG PORT
 	LDR	R0, =RCC_AHB1ENR
 	LDR	R1, [R0]
@@ -25,3 +24,4 @@ UserButtonInit
 	
 	BX LR
 	
+	END

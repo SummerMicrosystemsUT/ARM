@@ -1,4 +1,3 @@
 #pragma once
 
-	extern UserButtonInit
-	extern UserButtonPressed 
+	extern USER_BUTTON_INIT 

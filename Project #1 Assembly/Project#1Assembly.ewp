@@ -1870,22 +1870,22 @@
     <name>$PROJ_DIR$\asm.s</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\LED.h</name>
+    <name>$PROJ_DIR$\LED.h</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\LED.s</name>
+    <name>$PROJ_DIR$\LED.s</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\Timers.h</name>
+    <name>$PROJ_DIR$\TIMERS.h</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\Timers.s</name>
+    <name>$PROJ_DIR$\TIMERS.s</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\UserButton.h</name>
+    <name>$PROJ_DIR$\USER_BUTTON.h</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\..\Project #0 Assembly\UserButton.s</name>
+    <name>$PROJ_DIR$\USER_BUTTON.s</name>
   </file>
 </project>
 
