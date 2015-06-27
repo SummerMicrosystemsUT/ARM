@@ -1,3 +1,4 @@
 #pragma once
 	extern TIMER_2_INIT
 	extern TIMER_2_GENERATE_UPDATE_EVENT
+	extern LOAD_TIMER_2_COUNTER_INTO_R12
