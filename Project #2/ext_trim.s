@@ -49,7 +49,7 @@ EXT_TRIM_Get_Counts
         STR     R1, [R0]
         
         LDR     R2, =ADC3_DR
-        LDR     R8, [R2]
+        LDR     R6, [R2]
         
         POP     {R0, R1, R2}
         BX      LR

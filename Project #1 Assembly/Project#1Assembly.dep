@@ -6,49 +6,43 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\LED.s</file>
-      <file>$PROJ_DIR$\TIMERS.s</file>
-      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
-      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
-      <file>$PROJ_DIR$\LED.h</file>
-      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
-      <file>$PROJ_DIR$\USER_BUTTON.s</file>
-      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
-      <file>$PROJ_DIR$\asm.s</file>
       <file>$PROJ_DIR$\Debug\Obj\TIMERS.o</file>
-      <file>$PROJ_DIR$\TIMERS.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\USER_BUTTON.o</file>
+      <file>$PROJ_DIR$\LED.h</file>
       <file>$PROJ_DIR$\USER_BUTTON.h</file>
+      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
+      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
+      <file>$PROJ_DIR$\LED.s</file>
+      <file>$PROJ_DIR$\USER_BUTTON.s</file>
+      <file>$PROJ_DIR$\Debug\Obj\USER_BUTTON.o</file>
+      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
       <file>$PROJ_DIR$\Debug\Obj\LED.o</file>
+      <file>$PROJ_DIR$\TIMERS.s</file>
+      <file>$PROJ_DIR$\asm.s</file>
+      <file>$PROJ_DIR$\TIMERS.h</file>
     </outputs>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 4 6 11 0 9</file>
+        </tool>
+      </inputs>
+    </file>
     <file>
       <name>$PROJ_DIR$\LED.s</name>
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 14</file>
+          <file> 11</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 2 4</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\TIMERS.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 10</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file> 2 4</file>
+          <file> 3 10</file>
         </tool>
       </inputs>
     </file>
@@ -57,31 +51,28 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 12</file>
+          <file> 9</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 2 4</file>
+          <file> 3 10</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>[ROOT_NODE]</name>
+      <name>$PROJ_DIR$\TIMERS.s</name>
       <outputs>
         <tool>
-          <name>ILINK</name>
-          <file> 8</file>
+          <name>AARM</name>
+          <file> 0</file>
         </tool>
       </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
       <inputs>
         <tool>
-          <name>ILINK</name>
-          <file> 6 3 14 10 12</file>
+          <name>AARM</name>
+          <file> 3 10</file>
         </tool>
       </inputs>
     </file>
@@ -90,15 +81,24 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 3</file>
+          <file> 6</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 2 4 13 11 5</file>
+          <file> 3 10 2 14 1</file>
         </tool>
       </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
     </file>
   </configuration>
   <configuration>

@@ -6,79 +6,31 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\ext_trim.o</file>
-      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
-      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
-      <file>$PROJ_DIR$\Debug\Obj\lcd.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\font13.o</file>
-      <file>$PROJ_DIR$\lcd.h</file>
-      <file>$PROJ_DIR$\lcd.s</file>
-      <file>$PROJ_DIR$\asm.s</file>
-      <file>$PROJ_DIR$\font13.s</file>
-      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
       <file>$PROJ_DIR$\Debug\Obj\TIMERS.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
       <file>$PROJ_DIR$\TIMERS.s</file>
       <file>$PROJ_DIR$\TIMERS.h</file>
-      <file>$PROJ_DIR$\font13.h</file>
-      <file>$PROJ_DIR$\ext_trim.s</file>
+      <file>$PROJ_DIR$\lcd.s</file>
+      <file>$PROJ_DIR$\lcd.h</file>
       <file>$PROJ_DIR$\ext_trim.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\asm.o</file>
+      <file>$PROJ_DIR$\font13.h</file>
+      <file>$PROJ_DIR$\font13.s</file>
+      <file>$PROJ_DIR$\asm.s</file>
+      <file>$PROJ_DIR$\ext_trim.s</file>
+      <file>$PROJ_DIR$\Debug\Exe\asm.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\font13.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\lcd.o</file>
+      <file>$TOOLKIT_DIR$\inc\ST\iostm32f207zx.h</file>
+      <file>$TOOLKIT_DIR$\inc\asm\io_macros.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\ST\stm32f207xG.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\ext_trim.o</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 10 17 1 5 4 11</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 3</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\lcd.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 4</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file> 2 0</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\asm.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 17</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>AARM</name>
-          <file> 2 0 6 13 14 16</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\font13.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 5</file>
+          <file> 11</file>
         </tool>
       </outputs>
     </file>
@@ -87,18 +39,42 @@
       <outputs>
         <tool>
           <name>AARM</name>
-          <file> 11</file>
+          <file> 0</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 2 0</file>
+          <file> 14 15</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\ext_trim.s</name>
+      <name>$PROJ_DIR$\lcd.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 14 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\font13.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\asm.s</name>
       <outputs>
         <tool>
           <name>AARM</name>
@@ -108,7 +84,31 @@
       <inputs>
         <tool>
           <name>AARM</name>
-          <file> 2 0</file>
+          <file> 14 15 5 3 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ext_trim.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 14 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\asm.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 16 1 17 12 13 0</file>
         </tool>
       </inputs>
     </file>
