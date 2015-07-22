@@ -1887,12 +1887,6 @@
   <file>
     <name>$PROJ_DIR$\lcd.s</name>
   </file>
-  <file>
-    <name>$PROJ_DIR$\TIMERS.h</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\TIMERS.s</name>
-  </file>
 </project>
 
 

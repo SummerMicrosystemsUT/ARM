@@ -26,7 +26,7 @@ __iar_program_start
         DATA
         
 string 
-        DC8 "0000"
+        DC8 "00000"
 
 
         SECTION .text : CODE (2)
@@ -48,60 +48,35 @@ wait
         LDR     R3, =WHITE
         LDR     R4, =FONT_13
 
-        MOV     R7, #16
+        MOV     R12, #4
+        
+TheLoop
+        SUB     R12, R12, #1
+        
+        MOV     R7, #10
         UDIV    R8, R6, R7
         MUL     R9, R8, R7
         SUB     R10, R6, R9
         MOV     R6, R8
         
         LDR     R11, =string
-        ADD     R10, R10, #0x41
-        STRB    R10, [R11, #2]
-        
-        MOV     R7, #16
-        UDIV    R8, R6, R7
-        MUL     R9, R8, R7
-        SUB     R10, R6, R9
-        MOV     R6, R8
-        
-        LDR     R11, =string
-        ADD     R10, R10, #0x41
-        STRB    R10, [R11, #1]
-        
-        MOV     R7, #16
-        UDIV    R8, R6, R7
-        MUL     R9, R8, R7
-        SUB     R10, R6, R9
-        MOV     R6, R8
-        
-        LDR     R11, =string
-        ADD     R10, R10, #0x41
-        STRB    R10, [R11, #0]
+        ADD     R10, R10, #0x30
+        STRB    R10, [R11, R12]
+          
+        CMP     R12, #0
+        BEQ     PrintString
+          
+        B       TheLoop
+
+PrintString
 
         LDR     R11, =string
         MOV     R10, #0
-        STRB    R10, [R11, #3]
+        STRB    R10, [R11, #4]
         
         LDR     R5, =string     
         BL      LCD_WriteString
-
-       
-        //MOV R9, #10
-        //UDIV R10, R8, R9
-        //MUL R11, R10, R9
-        //SUB R12, R8, R11
-     
-        //ADD R12, R12, #0x30
-        
-        //MOV     R5, R12
-        
-        //BL LCD_WriteCharacter
-        
-        //SUB     R0, R0, #10
-        //CMP     R10, #0
-        //BEQ wait
                 
         B wait
-   
 
         END
